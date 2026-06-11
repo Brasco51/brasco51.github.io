@@ -20,6 +20,7 @@ body{margin:0;background:var(--bg);color:var(--body);
 a{color:#1257A0;text-decoration:none}
 a:hover{text-decoration:underline}
 .wrap{max-width:1000px;margin:0 auto;padding:0 20px;width:100%}
+.grid-wrap{max-width:1140px;margin:0 auto;padding:0 20px;width:100%}
 .signal{height:5px;flex:none;background:linear-gradient(90deg,var(--amber) 0 60px,#222 60px 64px,var(--amber) 64px 120px,#222 120px 124px,var(--amber) 124px)}
 /* шапка */
 .masthead{background:var(--ink);color:#fff;padding:30px 0 26px;position:relative;z-index:2;flex:none}
@@ -31,8 +32,9 @@ a:hover{text-decoration:underline}
 .tagline{margin:12px 0 0;color:#AEB6C0;max-width:620px;font-size:16px}
 /* лента карточек */
 main{padding:56px 0 60px;position:relative;z-index:1;flex:1 0 auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,340px));
-  gap:18px;justify-content:start}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grid{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
   padding:20px 20px 18px;display:flex;flex-direction:column;
   transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
@@ -82,7 +84,7 @@ footer p{margin:5px 0;font-size:14px;max-width:620px;line-height:1.6}
 <h1 class="brand">ПроВсё - ОГОГО</h1>
 <p class="tagline"></p>
 </div></header>
-<main class="wrap"><div class="grid">
+<main class="grid-wrap"><div class="grid">
 <article class="card"><p class="cat">Установка</p><h2><a href="articles/adapter-pitaniya-kamery-lada-vesta-ng__e2447b/">Адаптер подключения питания камеры заднего вида для Lada Vesta NG (2022+)</a></h2><p>Врезной переходник к штатной проводке • Без скруток • Сохраняет заводскую фишку • Для комплектаций с EnjoY / EnjoY Pro 01. Что это за адаптер и для…</p><a class="more" href="articles/adapter-pitaniya-kamery-lada-vesta-ng__e2447b/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-zadnego-vida-ford-mondeo-mk4-2007__11f8ba/">Установка камеры заднего вида на Ford Mondeo MK4 2007–2015</a></h2><p>Универсальная AHD-камера в ручку багажника • IP67 • AHD 720p / 1080p • Только для Android ШГУ 01. Какая магнитола стоит у вас Эта камера работает в…</p><a class="more" href="articles/ustanovka-kamery-zadnego-vida-ford-mondeo-mk4-2007__11f8ba/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-omoda-c5__8a003f/">Установка камеры переднего вида 704000513AA на Omoda C5 (2021–н.в.)</a></h2><p>OEM-камера 704000513AA • IP67 • Установка в решётку Star Diamond • Также подходит для Chery Tiggo 8 Pro Max 01 Важно: проверьте партномер камеры…</p><a class="more" href="articles/ustanovka-kamery-omoda-c5__8a003f/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-zadnego-vida-range-rover-l322-200__da79ae/">Установка камеры заднего вида на Range Rover L322 2006–2013</a></h2><p>Универсальная AHD-камера в ручку багажника • IP67 • AHD 720p / 1080p • Только для Android ШГУ • Совместима по габаритам ручки 01. Какая магнитола…</p><a class="more" href="articles/ustanovka-kamery-zadnego-vida-range-rover-l322-200__da79ae/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-zadnego-vida-land-rover-freelande__f116f5/">Установка камеры заднего вида на Land Rover Freelander 2 2006–2015</a></h2><p>Универсальная AHD-камера в ручку багажника • IP67 • AHD 720p / 1080p • Только для Android ШГУ 01. Какая магнитола стоит у вас Эта камера работает в…</p><a class="more" href="articles/ustanovka-kamery-zadnego-vida-land-rover-freelande__f116f5/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-chery-tiggo-7-pro__86b6e3/">Установка камеры переднего вида 704000600AA на Chery Tiggo 7 Pro (T1C)</a></h2><p>OEM-камера 704000600AA • IP67 • Установка в решётку радиатора • Полное руководство 01 Важно: проверьте партномер камеры КРИТИЧНО: Номер камеры должен…</p><a class="more" href="articles/ustanovka-kamery-chery-tiggo-7-pro__86b6e3/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/01-besprovodnye-naushniki__8df53f/">Беспроводные наушники TestBuds — установка и настройка</a></h2><p>Bluetooth 5.3 • шумоподавление • 30 часов работы 01. Важно: проверьте совместимость Перед покупкой убедитесь, что Наушники TestBuds Pro подходит под…</p><a class="more" href="articles/01-besprovodnye-naushniki__8df53f/">Читать →</a></article>
 </div></main>
 <footer><div class="wrap"><div class="foot-brand">ПроВсё - ОГОГО</div><p></p><p class="foot-note">Материалы публикуются на этом сайте и в Дзене.</p></div></footer></body></html>
