@@ -20,7 +20,7 @@ a:hover{text-decoration:underline}
 .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
 .signal{height:5px;background:linear-gradient(90deg,var(--amber) 0 60px,#222 60px 64px,var(--amber) 64px 120px,#222 120px 124px,var(--amber) 124px)}
 /* шапка */
-.masthead{background:var(--ink);color:#fff;padding:30px 0 26px}
+.masthead{background:var(--ink);color:#fff;padding:30px 0 26px;position:relative;z-index:2}
 .eyebrow{font-family:Oswald;text-transform:uppercase;letter-spacing:.18em;
   font-size:13px;color:var(--amber);font-weight:600;margin:0 0 8px}
 .brand{font-family:Oswald;font-weight:700;text-transform:uppercase;
@@ -28,13 +28,13 @@ a:hover{text-decoration:underline}
 .brand .r{color:var(--amber)}
 .tagline{margin:12px 0 0;color:#AEB6C0;max-width:620px;font-size:16px}
 /* лента карточек */
-main{padding:34px 0 10px}
+main{padding:44px 0 10px;position:relative;z-index:1}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,340px));
   gap:18px;justify-content:start}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
   padding:20px 20px 18px;display:flex;flex-direction:column;
   transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
-.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(20,30,45,.10);
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(20,30,45,.10);
   border-color:var(--amber)}
 .cat{font-family:Oswald;text-transform:uppercase;letter-spacing:.12em;
   font-size:12px;font-weight:600;color:var(--amber);margin:0 0 10px}
@@ -62,10 +62,12 @@ main{padding:34px 0 10px}
 .article blockquote{background:var(--amber-soft);border-left:4px solid var(--amber);
   margin:20px 0;padding:14px 18px;border-radius:0 8px 8px 0;color:#5A4413}
 /* подвал */
-footer{margin-top:46px;background:var(--ink);color:#AEB6C0;padding:30px 0 38px}
+footer{margin-top:46px;background:var(--ink);color:#AEB6C0;
+  border-top:3px solid var(--amber);padding:34px 0 40px}
 .foot-brand{font-family:Oswald;font-weight:700;text-transform:uppercase;
-  letter-spacing:.05em;color:#fff;font-size:22px;margin:0 0 6px}
-footer p{margin:4px 0;font-size:14px}
+  letter-spacing:.05em;color:#fff;font-size:24px;margin:0 0 8px}
+footer p{margin:5px 0;font-size:14px;max-width:620px;line-height:1.6}
+.foot-note{margin-top:14px;color:#717A86;font-size:13px}
 @media (max-width:560px){.article{padding:24px 20px}}
 @media (prefers-reduced-motion:reduce){.card{transition:none}}
 *:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
@@ -80,4 +82,4 @@ footer p{margin:4px 0;font-size:14px}
 <main class="wrap"><div class="grid">
 <article class="card"><p class="cat">Установка</p><h2><a href="articles/01-besprovodnye-naushniki__8df53f/">Беспроводные наушники TestBuds — установка и настройка</a></h2><p>Bluetooth 5.3 • шумоподавление • 30 часов работы 01. Важно: проверьте совместимость Перед покупкой убедитесь, что Наушники TestBuds Pro подходит под…</p><a class="more" href="articles/01-besprovodnye-naushniki__8df53f/">Читать →</a></article>
 </div></main>
-<footer><div class="wrap"><div class="foot-brand">ПроВсё - ОГОГО</div><p></p><p>© Все материалы публикуются на этом сайте и в Дзене.</p></div></footer></body></html>
+<footer><div class="wrap"><div class="foot-brand">ПроВсё - ОГОГО</div><p></p><p class="foot-note">Материалы публикуются на этом сайте и в Дзене.</p></div></footer></body></html>
