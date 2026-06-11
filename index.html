@@ -12,15 +12,17 @@
   --line:#DCE1E7;
 }
 *{box-sizing:border-box}
+html,body{height:100%}
 body{margin:0;background:var(--bg);color:var(--body);
   font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;
-  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  display:flex;flex-direction:column;min-height:100%}
 a{color:#1257A0;text-decoration:none}
 a:hover{text-decoration:underline}
-.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
-.signal{height:5px;background:linear-gradient(90deg,var(--amber) 0 60px,#222 60px 64px,var(--amber) 64px 120px,#222 120px 124px,var(--amber) 124px)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px;width:100%}
+.signal{height:5px;flex:none;background:linear-gradient(90deg,var(--amber) 0 60px,#222 60px 64px,var(--amber) 64px 120px,#222 120px 124px,var(--amber) 124px)}
 /* шапка */
-.masthead{background:var(--ink);color:#fff;padding:30px 0 26px;position:relative;z-index:2}
+.masthead{background:var(--ink);color:#fff;padding:30px 0 26px;position:relative;z-index:2;flex:none}
 .eyebrow{font-family:Oswald;text-transform:uppercase;letter-spacing:.18em;
   font-size:13px;color:var(--amber);font-weight:600;margin:0 0 8px}
 .brand{font-family:Oswald;font-weight:700;text-transform:uppercase;
@@ -28,7 +30,7 @@ a:hover{text-decoration:underline}
 .brand .r{color:var(--amber)}
 .tagline{margin:12px 0 0;color:#AEB6C0;max-width:620px;font-size:16px}
 /* лента карточек */
-main{padding:44px 0 10px;position:relative;z-index:1}
+main{padding:56px 0 60px;position:relative;z-index:1;flex:1 0 auto}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,340px));
   gap:18px;justify-content:start}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
@@ -48,6 +50,7 @@ main{padding:44px 0 10px;position:relative;z-index:1}
 /* статья */
 .article{max-width:740px;margin:0 auto;background:var(--card);
   border:1px solid var(--line);border-radius:14px;padding:34px 38px 30px;margin-top:30px}
+body>article{flex:1 0 auto}
 .back{font-family:Oswald;text-transform:uppercase;letter-spacing:.1em;
   font-size:13px;font-weight:600;color:var(--muted)}
 .article h1{font-family:Oswald;font-weight:700;color:var(--ink);
@@ -62,7 +65,7 @@ main{padding:44px 0 10px;position:relative;z-index:1}
 .article blockquote{background:var(--amber-soft);border-left:4px solid var(--amber);
   margin:20px 0;padding:14px 18px;border-radius:0 8px 8px 0;color:#5A4413}
 /* подвал */
-footer{margin-top:46px;background:var(--ink);color:#AEB6C0;
+footer{flex:none;background:var(--ink);color:#AEB6C0;
   border-top:3px solid var(--amber);padding:34px 0 40px}
 .foot-brand{font-family:Oswald;font-weight:700;text-transform:uppercase;
   letter-spacing:.05em;color:#fff;font-size:24px;margin:0 0 8px}
@@ -80,6 +83,6 @@ footer p{margin:5px 0;font-size:14px;max-width:620px;line-height:1.6}
 <p class="tagline"></p>
 </div></header>
 <main class="wrap"><div class="grid">
-<article class="card"><p class="cat">Установка</p><h2><a href="articles/01-besprovodnye-naushniki__8df53f/">Беспроводные наушники TestBuds — установка и настройка</a></h2><p>Bluetooth 5.3 • шумоподавление • 30 часов работы 01. Важно: проверьте совместимость Перед покупкой убедитесь, что Наушники TestBuds Pro подходит под…</p><a class="more" href="articles/01-besprovodnye-naushniki__8df53f/">Читать →</a></article>
+<article class="card"><p class="cat">Установка</p><h2><a href="articles/adapter-pitaniya-kamery-lada-vesta-ng__e2447b/">Адаптер подключения питания камеры заднего вида для Lada Vesta NG (2022+)</a></h2><p>Врезной переходник к штатной проводке • Без скруток • Сохраняет заводскую фишку • Для комплектаций с EnjoY / EnjoY Pro 01. Что это за адаптер и для…</p><a class="more" href="articles/adapter-pitaniya-kamery-lada-vesta-ng__e2447b/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-zadnego-vida-ford-mondeo-mk4-2007__11f8ba/">Установка камеры заднего вида на Ford Mondeo MK4 2007–2015</a></h2><p>Универсальная AHD-камера в ручку багажника • IP67 • AHD 720p / 1080p • Только для Android ШГУ 01. Какая магнитола стоит у вас Эта камера работает в…</p><a class="more" href="articles/ustanovka-kamery-zadnego-vida-ford-mondeo-mk4-2007__11f8ba/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-omoda-c5__8a003f/">Установка камеры переднего вида 704000513AA на Omoda C5 (2021–н.в.)</a></h2><p>OEM-камера 704000513AA • IP67 • Установка в решётку Star Diamond • Также подходит для Chery Tiggo 8 Pro Max 01 Важно: проверьте партномер камеры…</p><a class="more" href="articles/ustanovka-kamery-omoda-c5__8a003f/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-zadnego-vida-range-rover-l322-200__da79ae/">Установка камеры заднего вида на Range Rover L322 2006–2013</a></h2><p>Универсальная AHD-камера в ручку багажника • IP67 • AHD 720p / 1080p • Только для Android ШГУ • Совместима по габаритам ручки 01. Какая магнитола…</p><a class="more" href="articles/ustanovka-kamery-zadnego-vida-range-rover-l322-200__da79ae/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-zadnego-vida-land-rover-freelande__f116f5/">Установка камеры заднего вида на Land Rover Freelander 2 2006–2015</a></h2><p>Универсальная AHD-камера в ручку багажника • IP67 • AHD 720p / 1080p • Только для Android ШГУ 01. Какая магнитола стоит у вас Эта камера работает в…</p><a class="more" href="articles/ustanovka-kamery-zadnego-vida-land-rover-freelande__f116f5/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/ustanovka-kamery-chery-tiggo-7-pro__86b6e3/">Установка камеры переднего вида 704000600AA на Chery Tiggo 7 Pro (T1C)</a></h2><p>OEM-камера 704000600AA • IP67 • Установка в решётку радиатора • Полное руководство 01 Важно: проверьте партномер камеры КРИТИЧНО: Номер камеры должен…</p><a class="more" href="articles/ustanovka-kamery-chery-tiggo-7-pro__86b6e3/">Читать →</a></article><article class="card"><p class="cat">Установка</p><h2><a href="articles/01-besprovodnye-naushniki__8df53f/">Беспроводные наушники TestBuds — установка и настройка</a></h2><p>Bluetooth 5.3 • шумоподавление • 30 часов работы 01. Важно: проверьте совместимость Перед покупкой убедитесь, что Наушники TestBuds Pro подходит под…</p><a class="more" href="articles/01-besprovodnye-naushniki__8df53f/">Читать →</a></article>
 </div></main>
 <footer><div class="wrap"><div class="foot-brand">ПроВсё - ОГОГО</div><p></p><p class="foot-note">Материалы публикуются на этом сайте и в Дзене.</p></div></footer></body></html>
